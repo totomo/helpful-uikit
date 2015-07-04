@@ -13,6 +13,7 @@
 		F0CA0C4C1B48013200C53736 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CA0C4B1B48013200C53736 /* Images.xcassets */; };
 		F0CA0C4F1B48013200C53736 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CA0C4D1B48013200C53736 /* LaunchScreen.xib */; };
 		F0CA0C5B1B48013200C53736 /* SushiKit_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA0C5A1B48013200C53736 /* SushiKit_SampleTests.swift */; };
+		F0CA0C811B4824B400C53736 /* SushiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CA0C801B4824B400C53736 /* SushiKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F0CA0C541B48013200C53736 /* SushiKit-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SushiKit-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CA0C591B48013200C53736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0CA0C5A1B48013200C53736 /* SushiKit_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiKit_SampleTests.swift; sourceTree = "<group>"; };
+		F0CA0C801B4824B400C53736 /* SushiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SushiKit.framework; path = "../../build/Debug-iphoneos/SushiKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CA0C811B4824B400C53736 /* SushiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		F0CA0C361B48013200C53736 = {
 			isa = PBXGroup;
 			children = (
+				F0CA0C801B4824B400C53736 /* SushiKit.framework */,
 				F0CA0C411B48013200C53736 /* SushiKit-Sample */,
 				F0CA0C571B48013200C53736 /* SushiKit-SampleTests */,
 				F0CA0C401B48013200C53736 /* Products */,
@@ -342,6 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/toku/oss/sushikit/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "SushiKit-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +360,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/toku/oss/sushikit/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "SushiKit-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +423,7 @@
 				F0CA0C601B48013200C53736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0CA0C611B48013200C53736 /* Build configuration list for PBXNativeTarget "SushiKit-SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +432,7 @@
 				F0CA0C631B48013200C53736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
