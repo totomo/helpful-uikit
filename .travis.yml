@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: SushiKit.xcodeproj
+xcode_scheme: SushiKitTests
+xcode_sdk: iphonesimulator
