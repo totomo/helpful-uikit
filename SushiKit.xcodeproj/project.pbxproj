@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F0CA0C201B47FFF200C53736 /* SushiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F0CA0C1F1B47FFF200C53736 /* SushiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0CA0C261B47FFF200C53736 /* SushiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CA0C1A1B47FFF200C53736 /* SushiKit.framework */; };
 		F0CA0C2D1B47FFF200C53736 /* SushiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA0C2C1B47FFF200C53736 /* SushiKitTests.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		F0CA0C1A1B47FFF200C53736 /* SushiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SushiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CA0C1E1B47FFF200C53736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0CA0C1F1B47FFF200C53736 /* SushiKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SushiKit.h; sourceTree = "<group>"; };
 		F0CA0C251B47FFF200C53736 /* SushiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SushiKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CA0C2B1B47FFF200C53736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0CA0C2C1B47FFF200C53736 /* SushiKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiKitTests.swift; sourceTree = "<group>"; };
@@ -71,7 +69,7 @@
 		F0CA0C1C1B47FFF200C53736 /* SushiKit */ = {
 			isa = PBXGroup;
 			children = (
-				F0CA0C1F1B47FFF200C53736 /* SushiKit.h */,
+				F0CA0C7A1B48042000C53736 /* Source */,
 				F0CA0C1D1B47FFF200C53736 /* Supporting Files */,
 			);
 			path = SushiKit;
@@ -102,6 +100,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F0CA0C7A1B48042000C53736 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,7 +114,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0CA0C201B47FFF200C53736 /* SushiKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
