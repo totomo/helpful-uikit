@@ -33,30 +33,25 @@ public extension UIButton {
             }
         }
     }
+    override public var highlighted:Bool {
+        get {
+            return super.highlighted
+        }
+        set {
+            self.backgroundColor = newValue ? buttonColor?.highlightedColor : buttonColor?.normalColor
+            super.highlighted = newValue
+        }
+    }
 
     public func setBackgroundColor(#color:UIColor?, forState state:UIControlState){
         switch state {
         case UIControlState.Normal:
             self.backgroundColor = color
         case UIControlState.Highlighted:
-            registerHighlightedColor(color)
+            self.buttonColor = ButtonColorManager(normalColor: self.backgroundColor, highlightedColor: color)
         default:
             break
         }
     }
 
-    private func registerHighlightedColor(color:UIColor?){
-        self.buttonColor = ButtonColorManager(normalColor: self.backgroundColor, highlightedColor: color)
-        self.addTarget(self, action: "didTouchDown:", forControlEvents: .TouchDown)
-        self.addTarget(self, action: "didTouchUp:", forControlEvents: .TouchUpInside)
-        self.addTarget(self, action: "didTouchUp:", forControlEvents: .TouchUpOutside)
-    }
-
-    internal func didTouchDown(button:UIButton){
-        self.backgroundColor = self.buttonColor?.highlightedColor
-    }
-
-    internal func didTouchUp(button:UIButton){
-        self.backgroundColor = self.buttonColor?.normalColor
-    }
 }
