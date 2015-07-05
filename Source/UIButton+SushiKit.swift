@@ -34,16 +34,6 @@ public extension UIButton {
         }
     }
 
-    public override func addTarget(target: AnyObject?, action: Selector, forControlEvents controlEvents: UIControlEvents) {
-        super.addTarget(target, action: action, forControlEvents: controlEvents)
-        if let unwrappedTarget:AnyObject = target
-            where controlEvents == .TouchUpInside {
-            //Add recognizer to detect long press
-            let longPressGestureRecognizer = UILongPressGestureRecognizer(target: unwrappedTarget, action: action)
-            self.addGestureRecognizer(longPressGestureRecognizer)
-        }
-    }
-
     public func setBackgroundColor(#color:UIColor?, forState state:UIControlState){
         switch state {
         case UIControlState.Normal:
